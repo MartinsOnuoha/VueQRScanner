@@ -5,7 +5,7 @@
 
 [Check it out Here](https://genxscanner.web.app/) 🚀
 
-![mainimage](https://raw.githubusercontent.com/MartinsOnuoha/VueQR/master/client/public/img/1.png)
+![mainimage](https://raw.githubusercontent.com/MartinsOnuoha/VueQRScanner/master/public/app_banner.png)
 
 ## 🛠 Technologies
 
