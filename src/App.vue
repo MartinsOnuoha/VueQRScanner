@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <img width="200" class="app__logo" alt="App logo" src="./assets/logo.png">
+    <Scanner></Scanner>
+    <Footer></Footer>
   </div>
 </template>
 
 <script lang="ts">
+import '@/assets/scss/_app.scss';
+import '@/assets/scss/_mobile.scss';
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Scanner from './components/Scanner/Scanner.vue';
+import Footer from './components/Footer/Footer.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    Scanner,
+    Footer,
   },
 })
 export default class App extends Vue {}
@@ -19,11 +24,11 @@ export default class App extends Vue {}
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'VT323', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
 }
 </style>
