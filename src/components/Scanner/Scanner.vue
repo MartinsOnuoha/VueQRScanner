@@ -2,7 +2,7 @@
   <div class="scanner">
     <h1>Select QRCode Image to Scan 🔬</h1>
     <label for="select-image" :class="[processing? 'processing' : '', 'custom-file-upload']">{{ processing? 'Hang on...' : 'Choose Image' }}</label>
-    <qrcode-capture id="select-image" :multiple="false" @detect="onDetect" @decode="onDecode" />
+    <qrcode-capture id="select-image" :multiple="false" @detect="onDetect" @decode="onDecode" :capture="false" />
 
     <div class="value">
       <div v-if="decodedValue" @click="goToSite"> {{ this.decodedValue }} </div>
@@ -13,11 +13,10 @@
 <script>
 import './_scanner.scss';
 import { Vue, Component } from 'vue-property-decorator';
-import { QrcodeDropZone, QrcodeCapture } from 'vue-qrcode-reader';
+import { QrcodeCapture } from 'vue-qrcode-reader';
 
 @Component({
   components: {
-    QrcodeDropZone,
     QrcodeCapture,
   },
 })
