@@ -1,24 +1,19 @@
-# qrcode-reader
+# Gen.X QRcode to URL decoder
 
-## Project setup
-```
-yarn install
-```
+> Converts QRCodes from image to URLs
+>
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+[Check it out Here](https://genxscanner.web.app/) 🚀
 
-### Compiles and minifies for production
-```
-yarn build
-```
+![mainimage](https://raw.githubusercontent.com/MartinsOnuoha/VueQR/master/client/public/img/1.png)
 
-### Lints and fixes files
-```
-yarn lint
-```
+## 🛠 Technologies
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Typescript
+- Vue
+- Javascript
+
+## 🍕 Features
+
+- Decode QRCodes to URL
+- One-click Visit URLs
